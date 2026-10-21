@@ -5,7 +5,7 @@ import {
   FaWhatsapp,
   FaWindowMaximize,
 } from 'react-icons/fa'
-import { whatsappLinkFor } from '../config/contact'
+import { WHATSAPP_LINK } from '../config/contact'
 import { Reveal } from './Reveal'
 
 const SERVICES = [
@@ -19,8 +19,6 @@ const SERVICES = [
       'One-off or regular rounds',
       'Conservatories & skylights',
     ],
-    message:
-      "Hi AV Cleaning Services! I'm interested in window cleaning. Could I get a free quote?",
   },
   {
     icon: FaBuilding,
@@ -32,8 +30,6 @@ const SERVICES = [
       'Washrooms, kitchens & communal areas',
       'Fully insured & vetted team',
     ],
-    message:
-      "Hi AV Cleaning Services! I'm interested in office & commercial cleaning. Could I get a free quote?",
   },
   {
     icon: FaHome,
@@ -45,8 +41,6 @@ const SERVICES = [
       'Deep cleans & end of tenancy',
       'Eco-friendly products available',
     ],
-    message:
-      "Hi AV Cleaning Services! I'm interested in home cleaning. Could I get a free quote?",
   },
 ] as const
 
@@ -87,7 +81,7 @@ export function Services() {
                   ))}
                 </ul>
                 <a
-                  href={whatsappLinkFor(service.message)}
+                  href={WHATSAPP_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-6 inline-flex items-center gap-2 pt-2 text-sm font-semibold text-brand transition-colors hover:text-brand-dark"

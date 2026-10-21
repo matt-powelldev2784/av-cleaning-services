@@ -71,14 +71,14 @@ export function Hero() {
               href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3 font-semibold text-white shadow-lg shadow-whatsapp/30 transition hover:bg-whatsapp-dark"
+              className="inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-full bg-whatsapp px-6 py-3 font-semibold text-white shadow-lg shadow-whatsapp/30 transition hover:bg-whatsapp-dark sm:w-64 lg:w-60"
             >
               <FaWhatsapp className="h-5 w-5" />
               Get a free quote
             </a>
             <a
               href={CONTACT.phoneHref}
-              className="inline-flex items-center gap-2 rounded-full border border-white/30 px-6 py-3 font-semibold text-white transition hover:border-white hover:bg-white/10"
+              className="inline-flex w-full max-w-xs items-center justify-center gap-2 rounded-full border border-white/30 px-6 py-3 font-semibold text-white transition hover:border-white hover:bg-white/10 sm:w-64 lg:w-60"
             >
               <FaPhoneAlt className="h-4 w-4" />
               {CONTACT.phoneDisplay}

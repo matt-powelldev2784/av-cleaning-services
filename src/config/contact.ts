@@ -5,18 +5,14 @@
 // -------------------------------------------------------------------
 export const CONTACT = {
   businessName: 'AV Cleaning Services',
-  phoneDisplay: '+44 7700 900000',
-  phoneHref: 'tel:+447700900000',
+  phoneDisplay: '07947 619 500',
+  phoneHref: 'tel:+447947619500',
   email: 'hello@avcleaningservices.example',
-  whatsappNumber: '447700900000',
+  whatsappNumber: '447947619500',
   whatsappMessage:
     "Hi AV Cleaning Services! I'd like to get a free quote, please.",
 } as const
 
-export const WHATSAPP_LINK = whatsappLinkFor(CONTACT.whatsappMessage)
+export const WHATSAPP_LINK = `https://wa.me/${CONTACT.whatsappNumber}?text=${encodeURIComponent(CONTACT.whatsappMessage)}`
 
 export const MAILTO_LINK = `mailto:${CONTACT.email}`
-
-export function whatsappLinkFor(message: string): string {
-  return `https://wa.me/${CONTACT.whatsappNumber}?text=${encodeURIComponent(message)}`
-}
