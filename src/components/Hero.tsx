@@ -25,7 +25,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden bg-gradient-to-br from-navy via-navy to-navy-light"
+      className="relative overflow-hidden bg-linear-to-br from-navy via-navy to-navy-light"
     >
       <div
         className="pointer-events-none absolute -right-40 -top-40 h-96 w-96 rounded-full bg-brand/20 blur-3xl"

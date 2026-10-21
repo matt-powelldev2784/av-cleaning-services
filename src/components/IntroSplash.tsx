@@ -26,7 +26,7 @@ export function IntroSplash() {
       {visible && (
         <motion.div
           key="intro"
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-navy"
+          className="fixed inset-0 z-100 flex flex-col items-center justify-center bg-navy"
           exit={{ opacity: 0, scale: 1.04 }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
           aria-hidden="true"
