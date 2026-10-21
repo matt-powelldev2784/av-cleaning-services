@@ -37,7 +37,7 @@ export function Hero() {
       />
 
       <motion.div
-        className="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-10 sm:px-6 sm:pb-24 sm:pt-14 lg:grid-cols-2"
+        className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-20 pt-10 text-center sm:px-8 sm:pb-24 sm:pt-14 lg:grid-cols-2 lg:text-left"
         variants={container}
         initial="hidden"
         animate="show"
@@ -57,7 +57,7 @@ export function Hero() {
           </motion.h1>
           <motion.p
             variants={item}
-            className="mt-5 max-w-xl text-lg text-slate-300"
+            className="mx-auto mt-5 max-w-xl text-lg text-slate-300 lg:mx-0"
           >
             AV Cleaning Services delivers streak-free window cleaning,
             dependable office & commercial cleaning, and home cleans that
@@ -65,7 +65,7 @@ export function Hero() {
           </motion.p>
           <motion.div
             variants={item}
-            className="mt-8 flex flex-wrap items-center gap-4"
+            className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start"
           >
             <a
               href={WHATSAPP_LINK}
@@ -86,7 +86,7 @@ export function Hero() {
           </motion.div>
           <motion.ul
             variants={item}
-            className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-300"
+            className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-slate-300 lg:justify-start"
           >
             {TRUST_POINTS.map((point) => (
               <li key={point} className="inline-flex items-center gap-2">
@@ -99,7 +99,7 @@ export function Hero() {
 
         <motion.div
           variants={item}
-          className="relative w-full max-w-sm lg:max-w-md lg:justify-self-end"
+          className="relative mx-auto w-full max-w-sm lg:max-w-md lg:justify-self-end"
         >
           <div className="rounded-3xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur">
             <img
