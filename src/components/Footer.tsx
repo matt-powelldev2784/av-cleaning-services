@@ -54,7 +54,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-white/10">
-        <p className="mx-auto max-w-6xl px-4 py-4 text-xs text-slate-400 sm:px-6">
+        <p className="mx-auto max-w-6xl px-4 py-4 pb-[calc(1rem+env(safe-area-inset-bottom))] text-xs text-slate-400 sm:px-6">
           © {year} AV Cleaning Services. All rights reserved.
         </p>
       </div>

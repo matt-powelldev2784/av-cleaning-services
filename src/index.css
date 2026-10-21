@@ -17,6 +17,11 @@ html {
   scroll-padding-top: 4.5rem;
 }
 
+body {
+  /* Paint the iPhone notch / status-bar area and overscroll navy to match the header */
+  background-color: #0b2545;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
