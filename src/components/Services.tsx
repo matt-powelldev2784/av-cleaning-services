@@ -5,6 +5,7 @@ import {
   FaWhatsapp,
   FaWindowMaximize,
 } from 'react-icons/fa'
+import { GiHeavyRain } from 'react-icons/gi'
 import { WHATSAPP_LINK } from '../config/contact'
 import { Reveal } from './Reveal'
 
@@ -42,6 +43,17 @@ const SERVICES = [
       'Eco-friendly products available',
     ],
   },
+  {
+    icon: GiHeavyRain,
+    title: 'Gutter Clearing',
+    description:
+      'Keep gutters flowing freely and protect your property from blockages, leaks and water damage.',
+    features: [
+      'Debris & moss removal',
+      'Downpipe flushing',
+      'One-off or seasonal visits',
+    ],
+  },
 ] as const
 
 export function Services() {
@@ -61,7 +73,7 @@ export function Services() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-12 grid gap-8 sm:grid-cols-2">
           {SERVICES.map((service, index) => (
             <Reveal key={service.title} delay={0.1 * index} className="h-full">
               <article className="flex h-full flex-col rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-100 transition-shadow hover:shadow-lg">
