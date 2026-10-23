@@ -1,5 +1,5 @@
-import { FaWhatsapp } from 'react-icons/fa'
-import { CONTACT, WHATSAPP_LINK } from '../config/contact'
+import { FaEnvelope, FaWhatsapp } from 'react-icons/fa'
+import { CONTACT, MAILTO_LINK, WHATSAPP_LINK } from '../config/contact'
 
 const NAV_LINKS = [
   { href: '#services', label: 'Services' },
@@ -34,16 +34,24 @@ export function Header() {
           ))}
         </nav>
 
-        <a
-          href={WHATSAPP_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-whatsapp-dark md:hidden"
-          aria-label={`Chat with ${CONTACT.businessName} on WhatsApp`}
-        >
-          <FaWhatsapp className="h-4 w-4 shrink-0" />
-          <span className="hidden sm:inline">WhatsApp</span>
-        </a>
+        <div className="flex items-center gap-2 md:hidden">
+          <a
+            href={MAILTO_LINK}
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brand text-white transition-colors hover:bg-brand-dark"
+            aria-label={`Email ${CONTACT.businessName}`}
+          >
+            <FaEnvelope className="h-4 w-4 shrink-0" />
+          </a>
+          <a
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-whatsapp text-white transition-colors hover:bg-whatsapp-dark"
+            aria-label={`Chat with ${CONTACT.businessName} on WhatsApp`}
+          >
+            <FaWhatsapp className="h-4 w-4 shrink-0" />
+          </a>
+        </div>
       </div>
     </header>
   )
