@@ -29,7 +29,7 @@ export function About() {
     <section id="about" className="bg-white py-20 sm:py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 sm:px-8 lg:grid-cols-2">
         <Reveal>
-          <div className="overflow-hidden rounded-3xl shadow-lg ring-1 ring-slate-200">
+          <div className="mx-auto max-w-sm overflow-hidden rounded-3xl shadow-lg ring-1 ring-slate-200 sm:max-w-md lg:max-w-none">
             <img
               src="/images/before%20after%20window.webp"
               alt="Before and after window cleaning — grime on the left, sparkling clean on the right"
